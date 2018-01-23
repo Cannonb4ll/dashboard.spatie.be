@@ -37,7 +37,7 @@
 
         created() {
             this.fetchCoin();
-            setInterval(this.fetchCoin, 15 * 60 * 1000);
+            setInterval(this.fetchCoin, 10 * 30 * 1000);
         },
 
         methods: {
