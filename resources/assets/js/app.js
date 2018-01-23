@@ -2,6 +2,9 @@ import './bootstrap.js';
 
 import Echo from 'laravel-echo';
 import Vue from 'vue';
+import Vue2Filters from 'vue2-filters';
+
+Vue.use(Vue2Filters);
 
 import Dashboard from './components/Dashboard';
 import Calendar from './components/Calendar';

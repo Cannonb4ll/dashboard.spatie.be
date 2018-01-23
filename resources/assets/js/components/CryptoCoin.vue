@@ -4,11 +4,11 @@
             <time class="time-weather__content">
                 <span class="time-weather__weather">
                     <span class="time-weather__weather__description">
-                        <i class="fa fa-money fa-3x"></i>
+                        <i class="cf" v-bind:class="icon"></i>
                     </span>
                 </span>
                 <span class="time-weather__date">{{ title }}</span>
-                <span class="time-weather__time">${{ value.price_usd }}</span>
+                <span class="time-weather__time">{{ value.price_usd | currency }}</span>
             </time>
         </section>
     </tile>
@@ -24,7 +24,7 @@
             Tile,
         },
 
-        props: ['position', 'coin', 'title'],
+        props: ['position', 'coin', 'title', 'icon'],
 
         data() {
             return {
