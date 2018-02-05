@@ -7,6 +7,7 @@
 <dashboard id="dashboard" columns="4" rows="4">
     <twitter :initial-tweets="{{ json_encode($initialTweets) }}" position="a1:a4"></twitter>
     <time-weather position="d1" date-format="ddd DD/MM" time-zone="Europe/Amsterdam" weather-city="Nijkerk"></time-weather>
+    <time-weather position="d2" date-format="ddd DD/MM" time-zone="Europe/Amsterdam" weather-city="Schiermonnikoog"></time-weather>
 
     <crypto-coin coin="ethereum" title="Ethereum" icon="cf-eth" position="b1"></crypto-coin>
     <crypto-coin coin="bitcoin" title="Bitcoin" icon="cf-btc" position="c1"></crypto-coin>
